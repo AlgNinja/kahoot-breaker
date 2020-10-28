@@ -25,7 +25,7 @@ function spawn(pin, name, amt) {
     for(var i = 0; i <=amt; i++) {
         const client = new Kahoot();
         id = id + 1;
-        client.join(9592491 /* <- Replace with code */, `${name}${id}`);
+        client.join(pin /* <- Replace with code */, `${name}${id}`);
         client.on("Joined", () => {
             console.log("I joined the Kahoot!");
             client.on("questionStart", (question) => {
